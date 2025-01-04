@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --primary-color: #1e1e1e;   /* Black */
+    --secondary-color: #c0c0c0; /* Silver */
+    --accent-color: #a52a2a;    /* Brown */
+    --highlight-color: #f5deb3; /* Wheat */
+}
+
+body{
+    width: 100%;
+    background-color: var(--highlight-color);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 20vh;
+    width: 100%;
+    background-color: var(--accent-color);
+}
+header ul{
+    display: flex;
+    gap: 1.5rem;
+}
+header ul li a{
+    color: var(--primary-color);
+}
+header ul li a:hover{
+    color: var(--secondary-color);
+}
+
+#inicio{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+#inicio .text-inicio{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+#inicio .text-inicio h1{
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+#inicio .text-inicio a{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    width: fit-content;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+}
+#inicio .text-inicio a:hover{
+    background-color: var(--accent-color);
+    color: var(--highlight-color);
+}
+
+#agendamento{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+}
+#agendamento form{
+    width: fit-content;
+    padding: 2rem 3rem;
+    background-color: var(--highlight-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#agendamento form .input{
+    display: flex;
+}
+#agendamento form .input label{
+    font-size: 2rem;
+    font-weight: 500;
+}
+#agendamento form .input input, #agendamento form .input select{
+    margin-left: 1rem;
+    width: 100%;
+    text-align: center;
+}
+#scheduleButton{
+    color: var(--highlight-color);
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+#agendados{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--highlight-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#agendados ul{
+    background-color: var(--accent-color);
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    border: 2px solid var(--primary-color);
+}
+#agendados ul li{
+    color: var(--highlight-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
